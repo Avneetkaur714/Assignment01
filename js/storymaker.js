@@ -73,6 +73,16 @@ function newRandomStory_on_click() {
     generateRandomStory();
 }
 
+function resetStory() {
+    chosenNoun1P.textContent = "";
+    chosenVerbP.textContent = "";
+    chosenAdjectiveP.textContent = "";
+    chosenNoun2P.textContent = "";
+    chosenSettingP.textContent = "";
+    userStory = "";
+    document.getElementById('story').textContent = "";
+}
+
 // Function to dynamically add student ID or name
 function addStudentId() {
     const studentId = "200516907"; // Replace with your actual student ID
